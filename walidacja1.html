@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>walidacja danych</title>
+	<script src="walidacja.js"></script>
+</head>
+
+<body>
+	<h1>uczeń</h1>
+	<hr>
+	<form>
+		imię i nazwisko
+		<br> <input type="text" id="imie">* <br>
+		email
+		<br> <input type="email" id="email">* <br>
+		ocena
+		<br> <input type="number" id="ocena" min="1" max="6">* <br>
+		data
+		<br> <input type="date" id="data">* <br> <br>
+		
+		<input type="submit" id="wyslij" value="wyslij" onclick="walidacja()">
+		<input type="reset" id="reset" value="reset">
+	</form>
+	<hr>
+	<h3>pola zaznaczone * są obowiązkowe!</h3>
+</body>
+</html>
